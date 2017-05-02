@@ -1,0 +1,23 @@
+{
+  "name": "fitness-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsingr/fitness-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsingr/fitness-tracker/issues"
+  },
+  "homepage": "https://github.com/bsingr/fitness-tracker#readme",
+  "dependencies": {
+    "lodash.flatten": "^4.4.0",
+    "lodash.uniqby": "^4.7.0"
+  }
+}
