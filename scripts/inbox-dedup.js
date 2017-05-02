@@ -10,6 +10,8 @@ fs.readdir(INBOX_PATH, (err, paths) => {
     console.log('NOOP: inbox is empty')
   } else if (paths.length === 1) {
     console.log('NOOP: inbox is already deduped')
+  } else {
+    console.log(`DEDUP: merging ${paths.length} files`)
   }
   Promise.all(paths.map(path => {
     return new Promise((resolve, reject) => {
