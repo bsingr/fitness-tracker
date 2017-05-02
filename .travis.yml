@@ -3,4 +3,8 @@ node_js:
   - "7"
 install:
   - npm install
-script: npm run inbox:dedup
+script: npm run inbox:dedup && ./scripts/ci-git-commit-and-push
+env:
+  global:
+  - ENCRYPTION_LABEL: "b01b3bb31771"
+  - COMMIT_AUTHOR_EMAIL: "mail@jens-bissinger.de"
