@@ -15,7 +15,6 @@ fi
 
 # Save some useful information
 REPO=`git config remote.origin.url`
-SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
 # Now let's go have some fun with the cloned repo
@@ -44,6 +43,5 @@ eval `ssh-agent -s`
 ssh-add deploy-key
 
 # Now that we're all set up, we can push.
-echo $SSH_REPO
 git status
-git push $SSH_REPO $TARGET_BRANCH -v
+git push origin HEAD:$TARGET_BRANCH -v
