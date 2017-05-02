@@ -11,7 +11,7 @@ fs.readdir(INBOX_PATH, (err, paths) => {
     return;
   } else if (paths.length === 1) {
     console.log('NOOP: inbox is already deduped')
-    return;
+    // return;
   } else {
     console.log(`DEDUP: merging ${paths.length} files`)
   }
