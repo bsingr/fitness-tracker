@@ -8,8 +8,10 @@ fs.readdir(INBOX_PATH, (err, paths) => {
   if (err) throw err;
   if (paths.length === 0) {
     console.log('NOOP: inbox is empty')
+    return;
   } else if (paths.length === 1) {
     console.log('NOOP: inbox is already deduped')
+    return;
   } else {
     console.log(`DEDUP: merging ${paths.length} files`)
   }
