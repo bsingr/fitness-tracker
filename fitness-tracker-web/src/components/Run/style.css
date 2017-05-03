@@ -1,0 +1,36 @@
+.run {
+  padding: 16px 16px 32px 32px;
+  border-bottom: 1px solid #ccc;
+  clear: both;
+  max-width: 896px;
+  margin: 0 auto;
+  overflow: auto;
+  text-align: center; }
+
+.run:last-child {
+  border-bottom: none; }
+
+.run__heading {
+  margin-bottom: 15px; }
+
+.run__widget {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 160px;
+  width: 224px;
+  padding: 16px 48px; }
+
+.run__date {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 600;
+  text-align: center; }
+
+.run__route {
+  font-size: 16px;
+  color: #888;
+  margin-top: 0;
+  font-weight: 400;
+  text-align: center; }

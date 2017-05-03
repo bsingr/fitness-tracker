@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* COLORS */
+/* FONTS */
+/* BASIC ELEMENTS */
+body {
+  font-family: "Catamaran", sans-serif;
+  margin: 0;
+  background-color: #eff5f9; }
+
+.topbar {
+  position: relative;
+  background-color: #2c3e50;
+  text-align: center; }
+
+.logo {
+  font-size: 28px;
+  font-weight: 900; }
+
+.logo:before {
+  content: '•';
+  margin-right: 8px;
+  color: #7f8c8d; }
+
+.logo:after {
+  content: '•';
+  margin-left: 8px;
+  color: #7f8c8d; }
+
+.yellow {
+  color: #f1c40f; }
+
+.white {
+  color: #ecf0f1; }
+
+@media (min-width: 650px) {
+  .info {
+    position: absolute;
+    top: 10px;
+    right: 10px; } }
+
+.info a {
+  color: #7f8c8d;
+  margin-right: 16px; }
+
+.loadingindicator {
+  position: relative;
+  margin: 200px auto 0 auto;
+  width: 60px;
+  height: 60px;
+  color: #7f8c8d; }
+
+.loadingindicator-bubble1, .loadingindicator-bubble2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: -80px;
+  left: 0;
+  background-color: #95a5a6;
+  opacity: 0.6;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out; }
+
+.loadingindicator-bubble2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s; }
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1); } }
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0); }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }

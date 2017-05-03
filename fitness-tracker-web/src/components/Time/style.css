@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* COLORS */
+/* FONTS */
+/* BASIC ELEMENTS */
+body {
+  font-family: "Catamaran", sans-serif;
+  margin: 0;
+  background-color: #eff5f9; }
+
+.pie--time {
+  margin-left: 15px;
+  width: 95px;
+  height: 95px; }
+
+.pie__void--time {
+  background: #ccc; }
+
+.pie__fill--time {
+  stroke: #3498db; }
+
+.label__time:after {
+  content: 'h';
+  margin-left: 2px;
+  font-size: 0.6em;
+  font-weight: 200; }
+
+.label__time--actual {
+  z-index: 999;
+  color: #fff;
+  top: 45px; }
+
+.label__time--target {
+  z-index: 999;
+  top: 100px;
+  text-align: left; }
+
+.label__time--estimated {
+  z-index: 999;
+  top: 100px;
+  text-align: right;
+  font-weight: 400; }
+
+.label__time--estimated:before {
+  content: '🏁';
+  margin-right: 4px; }

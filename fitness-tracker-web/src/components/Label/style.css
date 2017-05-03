@@ -1,0 +1,21 @@
+.label {
+  position: relative;
+  text-align: center; }
+
+.label--actual {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 600;
+  width: 100%; }
+
+.label--target {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 200;
+  width: 100%; }
+
+.label--estimated {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 200;
+  width: 100%; }

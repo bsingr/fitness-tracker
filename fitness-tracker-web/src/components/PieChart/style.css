@@ -5,3 +5,12 @@ body {
   font-family: "Catamaran", sans-serif;
   margin: 0;
   background-color: #eff5f9; }
+
+.pie__void {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  border-radius: 50%; }
+
+.pie__fill {
+  fill: transparent; }

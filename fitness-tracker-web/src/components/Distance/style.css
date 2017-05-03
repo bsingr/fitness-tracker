@@ -1,0 +1,34 @@
+/* COLORS */
+/* FONTS */
+/* BASIC ELEMENTS */
+body {
+  font-family: "Catamaran", sans-serif;
+  margin: 0;
+  background-color: #eff5f9; }
+
+.pie--actualDistance, .pie--targetDistance {
+  position: absolute;
+  width: 132px;
+  height: 132px; }
+
+.pie__void--targetDistance {
+  stroke: #e74c3c; }
+
+.pie__void--actualDistance {
+  stroke: #1abc9c; }
+
+.label__distance:after {
+  content: 'km';
+  margin-left: 2px;
+  font-size: 0.6em;
+  font-weight: 200; }
+
+.label__distance--actual {
+  z-index: 999;
+  left: 3px;
+  top: 30px; }
+
+.label__distance--target {
+  z-index: 999;
+  left: 3px;
+  top: 68px; }
