@@ -8,7 +8,8 @@
     "inbox:dedup": "node scripts/inbox-dedup.js",
     "inbox:geojson": "node scripts/inbox-geojson.js",
     "inbox:stats": "node scripts/inbox-stats.js",
-    "ci": "npm run inbox:dedup && npm run inbox:geojson && npm run inbox:stats"
+    "ci": "npm run inbox:dedup && npm run inbox:geojson && npm run inbox:stats && npm run docs",
+    "docs": "cd fitness-tracker-web && npm run build && mv build ../docs"
   },
   "repository": {
     "type": "git",
