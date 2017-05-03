@@ -1,0 +1,18 @@
+{
+  "total": 1864,
+  "speed": {
+    "zero": 4,
+    "more": 1860
+  },
+  "is_moving": {
+    "false": 806,
+    "true": 1058
+  },
+  "activities": {
+    "unknown": 911,
+    "still": 17,
+    "on_foot": 615,
+    "in_vehicle": 39,
+    "on_bicycle": 282
+  }
+}

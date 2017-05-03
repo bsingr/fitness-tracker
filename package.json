@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "inbox:dedup": "node scripts/inbox-dedup.js",
     "inbox:geojson": "node scripts/inbox-geojson.js",
-    "ci": "npm run inbox:dedup && npm run inbox:geojson"
+    "inbox:stats": "node scripts/inbox-stats.js",
+    "ci": "npm run inbox:dedup && npm run inbox:geojson && npm run inbox:stats"
   },
   "repository": {
     "type": "git",
