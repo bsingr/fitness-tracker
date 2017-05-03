@@ -2,24 +2,24 @@ import React, { Component } from 'react';
 const Page = require('./components/Page')
 const config = require('./config')
 const runify = require('./lib/runify')
+import axios from 'axios'
 import './App.css'
 
-const runs = [{
-  "date": "2016-10-09T11:15+02:00",
-  "distance": 21.1,
-  "time": 113,
-  "route": [
-    "3-LÄNDER-HALBMARATHON",
-    "Lindau",
-    "Bregenz"
-  ],
-  "struggle": 5
-}]
+const PUBLIC_URL = process.env.PUBLIC_URL;
+
+const fetchRuns = url => () => {
+  return axios.request({
+    url
+  })
+  .then(res => {
+    return res.data.map(run => runify(run, config.target))
+  })
+}
 
 class App extends Component {
   render() {
     return (
-      <Page fetchRuns={() => Promise.resolve(runs.map(run => runify(run, config.target)))} />
+      <Page fetchRuns={fetchRuns(PUBLIC_URL + '/api/runs.json')} />
     );
   }
 }
