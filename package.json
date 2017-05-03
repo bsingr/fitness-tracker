@@ -9,7 +9,7 @@
     "inbox:geojson": "node scripts/inbox-geojson.js",
     "inbox:stats": "node scripts/inbox-stats.js",
     "ci": "npm run inbox:dedup && npm run inbox:geojson && npm run inbox:stats && npm run docs",
-    "docs": "cd fitness-tracker-web && npm install && PUBLIC_URL=https://bsingr.github.io/fitness-tracker/ npm run build && rm -rf docs && mv build ../docs"
+    "docs": "cd fitness-tracker-web && npm install && PUBLIC_URL=https://bsingr.github.io/fitness-tracker/ npm run build && rm -rf ../docs && mv build ../docs"
   },
   "repository": {
     "type": "git",
