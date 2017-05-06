@@ -1,46 +1,18 @@
 const fs = require('fs');
 const {basename, extname} = require('path');
+const moment = require('moment');
 const flatten = require('lodash.flatten');
 const uniqby = require('lodash.uniqby');
 const geodistance = require('../src/geodistance');
+const {
+  readFile,
+  writeFile,
+  unlinkFile,
+  mkdir
+} = require('../src/files');
 
 const INBOX_PATH='./inbox-runs';
 const DATA_DIR='./data';
-
-const readFile = path => new Promise((resolve, reject) => {
-  fs.readFile(path, (err, data) => {
-    if (err) return reject(err);
-    resolve(data);
-  });
-});
-const writeFile = (path, data) => new Promise((resolve, reject) => {
-  fs.writeFile(path, data, (err) => {
-    if (err) return reject(err);
-    resolve();
-  });
-})
-const unlinkFile = (path) => new Promise((resolve, reject) => {
-  fs.unlink(INBOX_PATH + '/' + path, (err, data) => {
-    if (err) return reject(err);
-    resolve(data);
-  });
-});
-const mkdir = (path) => new Promise((resolve, reject) => {
-  fs.stat(path, (err, stats) => {
-    if (err) {
-      fs.mkdir(path, (err) => {
-        if (err) return reject(err);
-        resolve();
-      })
-    } else {
-      if (stats.isDirectory()) {
-        return resolve();
-      } else {
-        return reject(new Error(path + ' already exists but is not a directory'))
-      }
-    }
-  })
-})
 
 const runsPath = DATA_DIR + '/' + 'runs.json';
 const readRuns = () => {
@@ -69,6 +41,12 @@ const calculateDistance = run => {
   return distance;
 }
 
+const calculateDuration = run => {
+  const startTime = (new Date(run[0].timestamp));
+  const endTime = (new Date(run[run.length - 1].timestamp));
+  return moment.duration(moment(endTime).diff(startTime)).asMinutes();
+}
+
 fs.readdir(INBOX_PATH, (err, paths) => {
   if (err) {
     console.log(`NOOP: cannot read inbox ${err}`)
@@ -77,9 +55,6 @@ fs.readdir(INBOX_PATH, (err, paths) => {
   if (paths.length === 0) {
     console.log('NOOP: inbox is empty')
     return;
-  } else if (paths.length === 1) {
-    console.log('NOOP: inbox is already deduped')
-    // return;
   } else {
     console.log(`RUNS: creating ${paths.length} runs`)
   }
@@ -93,7 +68,7 @@ fs.readdir(INBOX_PATH, (err, paths) => {
           runs[runId] = {
             id: runId,
             distance: calculateDistance(run),
-            time: 113,
+            time: calculateDuration(run),
             route: [
               "3-LÄNDER-HALBMARATHON",
               "Lindau",
@@ -110,7 +85,7 @@ fs.readdir(INBOX_PATH, (err, paths) => {
             }))
           ]))
         })
-        .then(() => unlinkFile(path))
+        .then(() => unlinkFile(INBOX_PATH + '/' + path))
     }))
     .then(() => writeRuns(runs))
   })
