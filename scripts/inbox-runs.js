@@ -1,5 +1,3 @@
-const fs = require('fs');
-const {basename, extname} = require('path');
 const {
   readFile,
   unlinkFile,
