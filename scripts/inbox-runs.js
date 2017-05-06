@@ -89,7 +89,14 @@ fs.readdir(INBOX_PATH, (err, paths) => {
           const run = JSON.parse(data);
           runs[runId] = {
             id: runId,
-            distance: calculateDistance(run)
+            distance: calculateDistance(run),
+            time: 113,
+            route: [
+              "3-LÄNDER-HALBMARATHON",
+              "Lindau",
+              "Bregenz"
+            ],
+            struggle: 5
           };
           return mkdir(runPath(runId))
           .then(() => Promise.all([
