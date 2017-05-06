@@ -14,6 +14,6 @@ module.exports = (data, target) => {
     (run) => assoc('targetPace', pace(target.distance, target.time), run),
     (run) => assoc('targetDistance', target.distance, run),
     (run) => assoc('targetTime', target.time, run),
-    (run) => assoc('date', new Date(run.date), run)
+    (run) => assoc('date', new Date(run.id), run)
   )(data)
 }

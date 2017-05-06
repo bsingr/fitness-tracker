@@ -1,7 +1,40 @@
-[
-  {
-    "date": "2016-10-09T11:15+02:00",
-    "distance": 21.1,
+{
+  "2017-05-04T21:44:53.383Z": {
+    "id": "2017-05-04T21:44:53.383Z",
+    "distance": 0,
+    "time": 113,
+    "route": [
+      "3-LÄNDER-HALBMARATHON",
+      "Lindau",
+      "Bregenz"
+    ],
+    "struggle": 5
+  },
+  "2017-05-04T21:53:24.682Z": {
+    "id": "2017-05-04T21:53:24.682Z",
+    "distance": 3.95055288499022,
+    "time": 113,
+    "route": [
+      "3-LÄNDER-HALBMARATHON",
+      "Lindau",
+      "Bregenz"
+    ],
+    "struggle": 5
+  },
+  "2017-05-04T21:53:40.188Z": {
+    "id": "2017-05-04T21:53:40.188Z",
+    "distance": 0,
+    "time": 113,
+    "route": [
+      "3-LÄNDER-HALBMARATHON",
+      "Lindau",
+      "Bregenz"
+    ],
+    "struggle": 5
+  },
+  "2017-05-05T06:42:26.364Z": {
+    "id": "2017-05-05T06:42:26.364Z",
+    "distance": 0.34907649623179693,
     "time": 113,
     "route": [
       "3-LÄNDER-HALBMARATHON",
@@ -10,4 +43,4 @@
     ],
     "struggle": 5
   }
-]
+}
