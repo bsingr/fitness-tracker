@@ -12,7 +12,8 @@ const fetchRuns = url => () => {
     url
   })
   .then(res => {
-    return res.data.map(run => runify(run, config.target))
+    const runs = res.data;
+    return Object.keys(runs).map(runId => runify(runs[runId], config.target))
   })
 }
 
