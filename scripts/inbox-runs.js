@@ -28,12 +28,14 @@ readRuns()
       .then(data => {
         const locations = JSON.parse(data);
         const runId = inboxRun.id;
-        runs[runId] = buildRun(runId, locations);
-        return mkdir(runPath(runId))
-        .then(() => Promise.all([
-          writeRunLocations(runId, locations),
-          writeRunGeojson(runId, buildGeojson(locations))
-        ]))
+        return buildRun(runId, locations).then(run => {
+          runs[runId] = run;
+          return mkdir(runPath(runId))
+          .then(() => Promise.all([
+            writeRunLocations(runId, locations),
+            writeRunGeojson(runId, buildGeojson(locations))
+          ]))
+        });
       })
       .then(() => unlinkFile(inboxRun.path))
     }))
