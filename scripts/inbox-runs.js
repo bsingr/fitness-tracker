@@ -9,26 +9,24 @@ const {
   unlinkFile,
   mkdir
 } = require('../src/fsPromise');
-const readInbox = require('../src/readInbox');
-const buildGeojson = require('../src/buildGeojson');
-const buildRun = require('../src/buildRun');
 
 const INBOX_PATH='./inbox-runs';
 const DATA_DIR='./data';
 
-const runsPath = DATA_DIR + '/' + 'runs.json';
-const readRuns = () => {
-  return readFile(runsPath).then(data => JSON.parse(data));
-}
-const writeRuns = runs => writeFile(runsPath, JSON.stringify(runs, null, 2));
-
-const runPath = runId => DATA_DIR + '/runs/' + runId;
-const runLocationsPath = runId => runPath(runId) + '/locations.json';
-const runGeojsonPath = runId => runPath(runId) + '/locations.geojson';
+const readInbox = require('../src/readInbox');
+const {
+  readRuns,
+  writeRuns,
+  runPath,
+  writeRunLocations,
+  writeRunGeojson
+} = require('../src/data')(DATA_DIR);
+const buildGeojson = require('../src/buildGeojson');
+const buildRun = require('../src/buildRun');
 
 readRuns()
 .then(runs => {
-  readInbox(INBOX_PATH)
+  return readInbox(INBOX_PATH)
   .then(inboxRuns => {
     console.log(`Importing ${inboxRuns.length} files from ${INBOX_PATH}`);
     return Promise.all(inboxRuns.map(inboxRun => {
@@ -39,11 +37,11 @@ readRuns()
         runs[runId] = buildRun(runId, locations);
         return mkdir(runPath(runId))
         .then(() => Promise.all([
-          writeFile(runLocationsPath(runId), data),
-          writeFile(runGeojsonPath(runId), JSON.stringify(buildGeojson(locations)))
+          writeRunLocations(runId, locations),
+          writeRunGeojson(runId, buildGeojson(locations))
         ]))
       })
-      .then(() => unlinkFile(INBOX_PATH + '/' + path))
+      .then(() => unlinkFile(inboxRun.path))
     }))
   })
   .then(() => writeRuns(runs))
