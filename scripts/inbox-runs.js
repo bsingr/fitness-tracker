@@ -1,11 +1,7 @@
 const fs = require('fs');
 const {basename, extname} = require('path');
-const moment = require('moment');
-const flatten = require('lodash.flatten');
-const uniqby = require('lodash.uniqby');
 const {
   readFile,
-  writeFile,
   unlinkFile,
   mkdir
 } = require('../src/fsPromise');
