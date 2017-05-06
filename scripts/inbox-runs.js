@@ -2,6 +2,7 @@ const fs = require('fs');
 const {basename, extname} = require('path');
 const flatten = require('lodash.flatten');
 const uniqby = require('lodash.uniqby');
+const geodistance = require('../src/geodistance');
 
 const INBOX_PATH='./inbox-runs';
 const DATA_DIR='./data';
@@ -51,6 +52,23 @@ const runPath = runId => DATA_DIR + '/runs/' + runId;
 const runLocationsPath = runId => runPath(runId) + '/locations.json';
 const runGeojsonPath = runId => runPath(runId) + '/locations.geojson';
 
+const calculateDistance = run => {
+  let distance = 0;
+  let previousLocation;
+  run.forEach((currentLocation, idx) => {
+    if (previousLocation) {
+      distance = distance + geodistance(
+        previousLocation.coords.latitude,
+        previousLocation.coords.longitude,
+        currentLocation.coords.latitude,
+        currentLocation.coords.longitude
+      )
+    }
+    previousLocation = currentLocation;
+  })
+  return distance;
+}
+
 fs.readdir(INBOX_PATH, (err, paths) => {
   if (err) throw err;
   if (paths.length === 0) {
@@ -70,7 +88,8 @@ fs.readdir(INBOX_PATH, (err, paths) => {
         .then(data => {
           const run = JSON.parse(data);
           runs[runId] = {
-            id: runId
+            id: runId,
+            distance: calculateDistance(run)
           };
           return mkdir(runPath(runId))
           .then(() => Promise.all([
