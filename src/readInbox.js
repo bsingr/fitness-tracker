@@ -14,6 +14,4 @@ const readInbox = inboxPath => {
   });
 };
 
-module.exports = {
-  readInbox
-};
+module.exports = readInbox;

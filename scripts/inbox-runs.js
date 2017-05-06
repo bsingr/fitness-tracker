@@ -9,7 +9,7 @@ const {
   unlinkFile,
   mkdir
 } = require('../src/fsPromise');
-const {readInbox} = require('../src/readInbox');
+const readInbox = require('../src/readInbox');
 const buildGeojson = require('../src/buildGeojson');
 const buildRun = require('../src/buildRun');
 
