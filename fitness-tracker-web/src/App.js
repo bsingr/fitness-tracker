@@ -3,6 +3,7 @@ const Page = require('./components/Page')
 const config = require('./config')
 const runify = require('./lib/runify')
 import axios from 'axios'
+import sortby from 'lodash.sortby'
 import './App.css'
 
 const PUBLIC_URL = process.env.PUBLIC_URL;
@@ -13,7 +14,10 @@ const fetchRuns = url => () => {
   })
   .then(res => {
     const runs = res.data;
-    return Object.keys(runs).map(runId => runify(runs[runId], config.target))
+    return sortby(
+      Object.keys(runs).map(runId => runify(runs[runId], config.target))
+      , run => run.date
+    );
   })
 }
 
