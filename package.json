@@ -7,7 +7,8 @@
     "test": "mocha",
     "inbox-runs": "node scripts/inbox-runs.js",
     "ci": "npm test && npm run inbox-runs && npm run ./scripts/ci-docs.sh",
-    "web:data": "rm -rf ./fitness-tracker-web/public/data && cp -R ./data ./fitness-tracker-web/public/data"
+    "web:data": "rm -rf ./fitness-tracker-web/public/data && cp -R ./data ./fitness-tracker-web/public/data",
+    "data:refresh": "node scripts/data-refresh.js"
   },
   "repository": {
     "type": "git",

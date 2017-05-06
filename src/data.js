@@ -5,7 +5,6 @@ const {
   mkdir
 } = require('../src/fsPromise');
 
-
 module.exports = dataPath => {
   // all runs
   const runsPath = dataPath + '/' + 'runs.json';
@@ -18,6 +17,9 @@ module.exports = dataPath => {
   const runPath = runId => dataPath + '/runs/' + runId;
   const runLocationsPath = runId => runPath(runId) + '/locations.json';
   const runGeojsonPath = runId => runPath(runId) + '/locations.geojson';
+  const readRunLocations = (runId) => {
+    return readFile(runLocationsPath(runId)).then(data => JSON.parse(data));
+  }
   const writeRunLocations = (runId, locations) => {
     return writeFile(runLocationsPath(runId), JSON.stringify(locations));
   }
@@ -31,6 +33,7 @@ module.exports = dataPath => {
     runPath,
     runLocationsPath,
     runGeojsonPath,
+    readRunLocations,
     writeRunLocations,
     writeRunGeojson
   }
