@@ -23,7 +23,8 @@
   "dependencies": {
     "axios": "^0.16.1",
     "lodash.flatten": "^4.4.0",
-    "lodash.uniqby": "^4.7.0"
+    "lodash.uniqby": "^4.7.0",
+    "moment": "^2.18.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
