@@ -6,8 +6,7 @@
   "scripts": {
     "test": "mocha",
     "inbox-runs": "node scripts/inbox-runs.js",
-    "ci": "npm test && npm run inbox-runs && npm run docs",
-    "docs": "./scripts/docs.sh"
+    "ci": "npm test && npm run inbox-runs && npm run ./scripts/ci-docs.sh"
   },
   "repository": {
     "type": "git",
