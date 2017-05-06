@@ -19,7 +19,7 @@ const fetchRuns = url => () => {
 class App extends Component {
   render() {
     return (
-      <Page fetchRuns={fetchRuns(PUBLIC_URL + '/api/runs.json')} />
+      <Page fetchRuns={fetchRuns(PUBLIC_URL + '/data/runs.json')} />
     );
   }
 }
