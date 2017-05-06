@@ -10,7 +10,8 @@ const {
   writeFile,
   unlinkFile,
   mkdir
-} = require('../src/files');
+} = require('../src/fsPromise');
+const {readInbox} = require('../src/readInbox');
 
 const INBOX_PATH='./inbox-runs';
 const DATA_DIR='./data';
@@ -25,47 +26,39 @@ const runPath = runId => DATA_DIR + '/runs/' + runId;
 const runLocationsPath = runId => runPath(runId) + '/locations.json';
 const runGeojsonPath = runId => runPath(runId) + '/locations.geojson';
 
-fs.readdir(INBOX_PATH, (err, paths) => {
-  if (err) {
-    console.log(`NOOP: cannot read inbox ${err}`)
-    return;
-  }
-  if (paths.length === 0) {
-    console.log('NOOP: inbox is empty')
-    return;
-  } else {
-    console.log(`RUNS: creating ${paths.length} runs`)
-  }
-  readRuns()
-  .then(runs => {
-    return Promise.all(paths.map(path => {
-      const runId = basename(path, extname(path));
-      return readFile(INBOX_PATH + '/' + path)
-        .then(data => {
-          const run = JSON.parse(data);
-          runs[runId] = {
-            id: runId,
-            distance: runGeodistance(run),
-            time: runDuration(run),
-            route: [
-              "3-LÄNDER-HALBMARATHON",
-              "Lindau",
-              "Bregenz"
-            ],
-            struggle: 5
-          };
-          return mkdir(runPath(runId))
-          .then(() => Promise.all([
-            writeFile(runLocationsPath(runId), data),
-            writeFile(runGeojsonPath(runId), JSON.stringify({
-              "type": "LineString",
-              "coordinates": run.map(r => [r.coords.longitude, r.coords.latitude])
-            }))
-          ]))
-        })
-        .then(() => unlinkFile(INBOX_PATH + '/' + path))
+readRuns()
+.then(runs => {
+  readInbox(INBOX_PATH)
+  .then(inboxRuns => {
+    console.log(`Importing ${inboxRuns.length} files from ${INBOX_PATH}`);
+    return Promise.all(inboxRuns.map(inboxRun => {
+      return readFile(inboxRun.path)
+      .then(data => {
+        const run = JSON.parse(data);
+        const runId = inboxRun.id;
+        runs[runId] = {
+          id: runId,
+          distance: runGeodistance(run),
+          time: runDuration(run),
+          route: [
+            "3-LÄNDER-HALBMARATHON",
+            "Lindau",
+            "Bregenz"
+          ],
+          struggle: 5
+        };
+        return mkdir(runPath(runId))
+        .then(() => Promise.all([
+          writeFile(runLocationsPath(runId), data),
+          writeFile(runGeojsonPath(runId), JSON.stringify({
+            "type": "LineString",
+            "coordinates": run.map(r => [r.coords.longitude, r.coords.latitude])
+          }))
+        ]))
+      })
+      // .then(() => unlinkFile(INBOX_PATH + '/' + path))
     }))
-    .then(() => writeRuns(runs))
   })
-  .catch(console.error)
-});
+  .then(() => writeRuns(runs))
+})
+.catch(console.error)

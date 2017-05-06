@@ -18,6 +18,12 @@ const unlinkFile = (path) => new Promise((resolve, reject) => {
     resolve(data);
   });
 });
+const readDir = (path) => new Promise((resolve, reject) => {
+  fs.readdir(path, (err, paths) => {
+    if (err) return reject(err);
+    resolve(paths);
+  });
+});
 const mkdir = (path) => new Promise((resolve, reject) => {
   fs.stat(path, (err, stats) => {
     if (err) {
@@ -39,5 +45,6 @@ module.exports = {
   readFile,
   writeFile,
   unlinkFile,
+  readDir,
   mkdir
 };
