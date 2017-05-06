@@ -70,7 +70,10 @@ const calculateDistance = run => {
 }
 
 fs.readdir(INBOX_PATH, (err, paths) => {
-  if (err) throw err;
+  if (err) {
+    console.log(`NOOP: cannot read inbox ${err}`)
+    return;
+  }
   if (paths.length === 0) {
     console.log('NOOP: inbox is empty')
     return;
