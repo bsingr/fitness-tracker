@@ -17,6 +17,7 @@ module.exports = dataPath => {
   const runPath = runId => dataPath + '/runs/' + runId;
   const runLocationsPath = runId => runPath(runId) + '/locations.json';
   const runGeojsonPath = runId => runPath(runId) + '/locations.geojson';
+
   const readRunLocations = (runId) => {
     return readFile(runLocationsPath(runId)).then(data => JSON.parse(data));
   }
@@ -26,6 +27,8 @@ module.exports = dataPath => {
   const writeRunGeojson = (runId, geojson) => {
     return writeFile(runGeojsonPath(runId), JSON.stringify(geojson));
   }
+  const removeRunLocations = (runId) => unlinkFile(runLocationsPath(runId));
+  const removeRunGeojson = (runId) => unlinkFile(runGeojsonPath(runId));
 
   return {
     readRuns,
@@ -35,6 +38,8 @@ module.exports = dataPath => {
     runGeojsonPath,
     readRunLocations,
     writeRunLocations,
-    writeRunGeojson
+    writeRunGeojson,
+    removeRunLocations,
+    removeRunGeojson
   }
 }
