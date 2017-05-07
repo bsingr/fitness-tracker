@@ -1,33 +1,20 @@
 const buildRun = require('../../src/buildRun');
 const {expect} = require('chai');
+const constanceStaadLocations = require('../resources/runs/constance-staad/locations.json');
 describe('buildRun', () => {
   it('builds', () => {
-    return buildRun('foo', [
-      {
-        timestamp: '2017-05-05T06:42:40.861Z',
-        coords: {
-          "longitude":9.157927315154557,
-          "latitude":47.6718976090051
-        }
-      },
-      {
-        timestamp: '2017-05-05T06:52:41.861Z',
-        coords: {
-          "longitude":9.153927314134567,
-          "latitude":47.6718976090341
-        }
-      }
-    ]).then(run => {
+    return buildRun('constance-staad', constanceStaadLocations).then(run => {
       expect(run).to.eql({
-        "distance": 0.2995037060109473,
-        "time": 10.016666666666667,
-        "id": "foo",
+        "distance": 10.167357026019097,
+        "time": 60.80501666666667,
+        "id": "constance-staad",
         "center": [
-          47.67189762639705,
-          9.155927314644563
+          47.668861188303744,
+          9.20458978790292
         ],
         "route": [
-          "Konstanz-Industriegebiet",
+          "Petershausen-Ost",
+          "Staad",
           "Konstanz"
         ],
         "struggle": 5

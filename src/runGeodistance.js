@@ -1,9 +1,9 @@
 const geodistance = require('./geodistance');
 
-const runGeodistance = run => {
-  let distance = 0;
+const runGeodistances = locations => {
   let previousLocation;
-  run.forEach((currentLocation, idx) => {
+  return locations.map((currentLocation, idx) => {
+    let distance = 0;
     if (previousLocation) {
       distance = distance + geodistance(
         previousLocation.coords.latitude,
@@ -13,7 +13,15 @@ const runGeodistance = run => {
       )
     }
     previousLocation = currentLocation;
+    return distance;
   })
-  return distance;
 }
-module.exports = runGeodistance;
+const runGeodistance = locations => {
+  return runGeodistances(locations).reduce((total, intermediate) => {
+    return total + intermediate;
+  }, 0);
+}
+module.exports = {
+  runGeodistances,
+  runGeodistance
+};
