@@ -1,9 +1,7 @@
 language: node_js
 node_js:
   - "7"
-install:
-  - npm install
-script: npm run ci && ./scripts/ci-git-commit-and-push
+script: ./scripts/ci.sh
 env:
   global:
   - ENCRYPTION_LABEL: "b01b3bb31771"
