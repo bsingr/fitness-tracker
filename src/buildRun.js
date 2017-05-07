@@ -44,8 +44,7 @@ const buildRun = (runId, locations) => {
       distance: runGeodistance(locations),
       time: runDuration(locations),
       route: buildRoute(milestonesGeoinfos.map(g => g.address)),
-      center: geocenter(locations.map(l => [l.coords.latitude, l.coords.longitude])),
-      struggle: 5
+      center: geocenter(locations.map(l => [l.coords.latitude, l.coords.longitude]))
     }
   })
 }
