@@ -1,6 +1,4 @@
 const fs = require('fs');
-const flatten = require('lodash.flatten');
-const uniqby = require('lodash.uniqby');
 
 const INBOX_PATH='./inbox';
 
@@ -45,12 +43,5 @@ fs.readdir(INBOX_PATH, (err, paths) => {
       activities
     }
   })
-  .then(data => new Promise((resolve, reject) => {
-    console.log(data)
-    fs.writeFile('stats.json', JSON.stringify(data, null, 2), (err) => {
-      if (err) return reject(err);
-      resolve();
-    });
-  }))
   .catch(console.error)
 });
