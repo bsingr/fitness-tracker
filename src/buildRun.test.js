@@ -1,6 +1,6 @@
-const buildRun = require('../../src/buildRun');
+const buildRun = require('./buildRun');
 const {expect} = require('chai');
-const constanceStaadLocations = require('../resources/runs/constance-staad/locations.json');
+const constanceStaadLocations = require('./test-resources/runs/constance-staad/locations.json');
 describe('buildRun', () => {
   it('builds', () => {
     return buildRun('constance-staad', constanceStaadLocations).then(run => {
