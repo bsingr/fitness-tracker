@@ -17,7 +17,7 @@ const fetchRuns = url => () => {
     return sortby(
       Object.keys(runs).map(runId => runify(runs[runId], config.target))
       , run => run.date
-    );
+    ).reverse();
   })
 }
 
