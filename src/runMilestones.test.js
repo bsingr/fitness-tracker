@@ -2,7 +2,7 @@ const runMilestones = require('./runMilestones');
 const {expect} = require('chai');
 const constanceStaadLocations = require('./test-resources/runs/constance-staad/locations.json');
 describe('runMilestones', () => {
-  it('builds', () => {
+  it('returns milestones with distances', () => {
     const milestones = runMilestones(constanceStaadLocations);
     expect(milestones.map(m => m.distance)).to.eql([
       0,

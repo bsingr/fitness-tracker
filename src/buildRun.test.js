@@ -2,7 +2,7 @@ const buildRun = require('./buildRun');
 const {expect} = require('chai');
 const constanceStaadLocations = require('./test-resources/runs/constance-staad/locations.json');
 describe('buildRun', () => {
-  it('builds', () => {
+  it('returns run', () => {
     return buildRun('constance-staad', constanceStaadLocations).then(run => {
       expect(run).to.eql({
         "distance": 10.167357026019097,
