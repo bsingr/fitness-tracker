@@ -3,6 +3,7 @@ const runDuration = require('./runDuration');
 const uniqby = require('lodash.uniqby');
 const reverseGeocode = require('./reverseGeocode');
 const geocenter = require('./geocenter');
+const geodistance = require('./geodistance');
 
 // address properties: park, bus_stop, path, road, suburb, town
 const buildRoute = addresses => {
@@ -22,12 +23,23 @@ const buildRoute = addresses => {
   return route;
 }
 
-const mostSeperatedLocations = (locations) => {
-  return [
-    locations[0],
-    locations[parseInt((locations.length/2).toFixed(0), 10)],
-    locations[locations.length - 1]
-  ]
+const mostSeperatedLocations = (locations, thresholdDistance) => {
+  let previousLocation;
+  return locations.filter((currentLocation, idx) => {
+    if (previousLocation) {
+      const distance = geodistance(
+        previousLocation.coords.latitude,
+        previousLocation.coords.longitude,
+        currentLocation.coords.latitude,
+        currentLocation.coords.longitude
+      )
+      previousLocation = currentLocation;
+      return distance > 0.5; // only take if distance to previous is > 500 meters
+    } else {
+      previousLocation = currentLocation;
+      return true; // take initial
+    }
+  })
 }
 
 const buildGeoinfos = locations => new Promise((resolve, reject) => {
