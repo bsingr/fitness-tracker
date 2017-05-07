@@ -4,9 +4,14 @@
     "distance": 1.696969180450636,
     "time": 6.42615,
     "route": [
-      "3-LÄNDER-HALBMARATHON",
-      "Lindau",
-      "Bregenz"
+      "Petershausen-Ost",
+      "Salzberg / Allmansdorfer Str.",
+      "Petershausen-West",
+      "Konstanz"
+    ],
+    "center": [
+      47.67367129407099,
+      9.189105414245951
     ],
     "struggle": 5
   },
@@ -15,9 +20,14 @@
     "distance": 0.7634414156714926,
     "time": 5.016,
     "route": [
-      "3-LÄNDER-HALBMARATHON",
-      "Lindau",
-      "Bregenz"
+      "Petershausen-Ost",
+      "Allmannsdorf",
+      "Tannenhof",
+      "Konstanz"
+    ],
+    "center": [
+      47.6745812848827,
+      9.197669234569242
     ],
     "struggle": 5
   },
@@ -26,9 +36,14 @@
     "distance": 3.917137362475971,
     "time": 25.07121666666667,
     "route": [
-      "3-LÄNDER-HALBMARATHON",
-      "Lindau",
-      "Bregenz"
+      "Petershausen-Ost",
+      "Petershausen-West",
+      "Konstanz-Industriegebiet",
+      "Konstanz"
+    ],
+    "center": [
+      47.66945819292966,
+      9.174908671266317
     ],
     "struggle": 5
   },
@@ -38,8 +53,13 @@
     "time": 929.6976333333333,
     "route": [
       "Petershausen-Ost",
+      "Petershausen-West",
       "Allmannsdorf",
       "Konstanz"
+    ],
+    "center": [
+      47.67402328228178,
+      9.19244276743144
     ],
     "struggle": 5
   },
@@ -50,7 +70,12 @@
     "route": [
       "Petershausen-Ost",
       "Staad",
+      "Strandbad Horn",
       "Konstanz"
+    ],
+    "center": [
+      47.668861188303744,
+      9.20458978790292
     ],
     "struggle": 5
   }
