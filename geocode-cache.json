@@ -10004,36 +10004,6 @@
           "9.2091348"
         ]
       }
-    },
-    {
-      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.666&lon=9.182&zoom=18",
-      "data": {
-        "place_id": "87062054",
-        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
-        "osm_type": "way",
-        "osm_id": "109388436",
-        "lat": "47.6666915",
-        "lon": "9.18170898483036",
-        "display_name": "1, Glärnischstraße, Petershausen-Ost, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
-        "address": {
-          "house_number": "1",
-          "road": "Glärnischstraße",
-          "suburb": "Petershausen-Ost",
-          "town": "Konstanz",
-          "county": "Verwaltungsgemeinschaft Konstanz",
-          "state_district": "Regierungsbezirk Freiburg",
-          "state": "Baden-Württemberg",
-          "postcode": "78464",
-          "country": "Deutschland",
-          "country_code": "de"
-        },
-        "boundingbox": [
-          "47.6665357",
-          "47.6668409",
-          "9.1815548",
-          "9.1818792"
-        ]
-      }
     }
   ]
 }
