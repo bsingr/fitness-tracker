@@ -8,6 +8,8 @@ const formatDate = (date) => {
     (d) => d.toLocaleDateString('en-US', {day: 'numeric'}),
     (_) => '. ',
     (d) => d.toLocaleDateString('en-US', {month: 'long'}),
+    (_) => ' ',
+    (d) => 1900 + d.getYear(),
     (_) => ' – ',
     (d) => d.getHours(),
     (_) => ':',
