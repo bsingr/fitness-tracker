@@ -1,17 +1,7 @@
 const runGeodistance = require('./runGeodistance');
 const runDuration = require('./runDuration');
-const flatten = require('lodash.flatten');
 const uniqby = require('lodash.uniqby');
-const axios = require('axios');
-
-const reverseGeocode = ({lat, lng}) => {
-  return axios.get(`http://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&zoom=18`)
-  .then(res => res.data)
-}
-const latLngFromLocation = location => ({
-  lat: location.coords.latitude,
-  lng: location.coords.longitude
-});
+const reverseGeocode = require('./reverseGeocode')
 
 // address properties: park, bus_stop, path, road, suburb, town
 const buildRoute = addresses => {
@@ -26,17 +16,34 @@ const buildRoute = addresses => {
     } else {
       route = route.concat(miscs);
     }
-    route = route.concat(towns)
+    route = route.concat(towns);
   }
   return route;
 }
 
+const mostSeperatedLocations = (locations) => {
+  return [
+    locations[0],
+    locations[parseInt((locations.length/2).toFixed(0), 10)],
+    locations[locations.length - 1]
+  ]
+}
+
+const buildGeoinfos = locations => new Promise((resolve, reject) => {
+  Promise.all(mostSeperatedLocations(locations).map(l => reverseGeocode({
+    lat: l.coords.latitude,
+    lng: l.coords.longitude
+  })))
+  .then(resolve)
+  .catch(reject)
+})
+
 const buildRun = (runId, locations) => {
-  return Promise.all([
-    reverseGeocode(latLngFromLocation(locations[0])),
-    reverseGeocode(latLngFromLocation(locations[(locations.length/2).toFixed(0)])),
-    reverseGeocode(latLngFromLocation(locations[locations.length - 1]))
-  ]).then(geoinfos => {
+  return buildGeoinfos(locations)
+  .catch(err => {
+    return [] // ignore errors
+  })
+  .then(geoinfos => {
     return {
       id: runId,
       distance: runGeodistance(locations),

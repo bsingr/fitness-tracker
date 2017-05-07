@@ -2,7 +2,7 @@ const buildRun = require('../../src/buildRun');
 const {expect} = require('chai');
 describe('buildRun', () => {
   it('builds', () => {
-    expect(buildRun('foo', [
+    return buildRun('foo', [
       {
         timestamp: '2017-05-05T06:42:40.861Z',
         coords: {
@@ -17,16 +17,17 @@ describe('buildRun', () => {
           "latitude":47.6718976090341
         }
       }
-    ])).to.eql({
-      "distance": 0.2995037060109473,
-      "time": 10.016666666666667,
-      "id": "foo",
-      "route": [
-        "3-LÄNDER-HALBMARATHON",
-        "Lindau",
-        "Bregenz"
-      ],
-      "struggle": 5
+    ]).then(run => {
+      expect(run).to.eql({
+        "distance": 0.2995037060109473,
+        "time": 10.016666666666667,
+        "id": "foo",
+        "route": [
+          "Konstanz-Industriegebiet",
+          "Konstanz"
+        ],
+        "struggle": 5
+      })
     })
   })
 })
