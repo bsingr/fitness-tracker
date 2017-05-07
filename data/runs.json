@@ -31,5 +31,68 @@
       "Bregenz"
     ],
     "struggle": 5
+  },
+  "2017-05-04T21:53:40.188Z": {
+    "id": "2017-05-04T21:53:40.188Z",
+    "distance": 0,
+    "time": 0,
+    "route": [],
+    "struggle": 5
+  },
+  "2017-05-06T20:59:33.991Z": {
+    "id": "2017-05-06T20:59:33.991Z",
+    "distance": 0,
+    "time": 0,
+    "route": [],
+    "struggle": 5
+  },
+  "2017-05-06T22:02:09.623Z": {
+    "id": "2017-05-06T22:02:09.623Z",
+    "distance": 0,
+    "time": 0,
+    "route": [],
+    "struggle": 5
+  },
+  "2017-05-05T06:42:26.364Z": {
+    "id": "2017-05-05T06:42:26.364Z",
+    "distance": 0.34907649623179693,
+    "time": 0.9917166666666667,
+    "route": [
+      "Konstanz-Industriegebiet",
+      "Konstanz"
+    ],
+    "struggle": 5
+  },
+  "2017-05-04T21:53:24.682Z": {
+    "id": "2017-05-04T21:53:24.682Z",
+    "distance": 3.95055288499022,
+    "time": 929.6976333333333,
+    "route": [
+      "Petershausen-Ost",
+      "Allmannsdorf",
+      "Konstanz"
+    ],
+    "struggle": 5
+  },
+  "2017-05-07T04:20:27.481Z": {
+    "id": "2017-05-07T04:20:27.481Z",
+    "distance": 1.6154057906489663,
+    "time": 4.358466666666667,
+    "route": [
+      "Petershausen-Ost",
+      "Konstanz"
+    ],
+    "struggle": 5
+  },
+  "2017-05-07T04:29:43.706Z": {
+    "id": "2017-05-07T04:29:43.706Z",
+    "distance": 10.167357026019097,
+    "time": 60.80501666666667,
+    "route": [
+      "Petershausen-Ost",
+      "Staad",
+      "Konstanz"
+    ],
+    "struggle": 5
   }
 }
