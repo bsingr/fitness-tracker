@@ -8,6 +8,9 @@ const tickStyle = (degrees) => ({transform: `rotate(${degrees}deg)`})
 
 const rotateStyle = (value) => ({transform: `rotate(${value.toFixed(0)}deg)`})
 
+// 0 km/h => -1
+// 10 km/h => 0
+// 20 km/h => 1
 const scaledRelation = (actualValue) => {
   return actualValue / 10 - 1;
 }
