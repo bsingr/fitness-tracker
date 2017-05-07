@@ -21,7 +21,6 @@
     "route": [
       "Petershausen-Ost",
       "Staad",
-      "Strandbad Horn",
       "Konstanz"
     ],
     "center": [
@@ -384,6 +383,7 @@
       "Petershausen-Ost",
       "Staad",
       "Strandbad Horn",
+      "Hoerle-Park",
       "Konstanz"
     ],
     "center": [
@@ -503,6 +503,7 @@
     "distance": 5.890483425344393,
     "time": 38.88333333333333,
     "route": [
+      "Sonnenbühlstraße/Tannenhof",
       "Allmannsdorf",
       "Egg",
       "Staad",
@@ -807,8 +808,8 @@
     "time": 69.06666666666666,
     "route": [
       "Petershausen-Ost",
-      "Staad",
       "Strandbad Horn",
+      "Staad",
       "Konstanz"
     ],
     "center": [
@@ -822,8 +823,8 @@
     "time": 63.5,
     "route": [
       "Petershausen-Ost",
-      "Staad",
       "Strandbad Horn",
+      "Staad",
       "Konstanz"
     ],
     "center": [
@@ -838,6 +839,7 @@
     "route": [
       "Allmannsdorf",
       "Staad",
+      "Strandbad Horn",
       "Petershausen-Ost",
       "Konstanz"
     ],
