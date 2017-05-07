@@ -31,7 +31,7 @@ const mostSeperatedLocations = (locations) => {
 }
 
 const buildGeoinfos = locations => new Promise((resolve, reject) => {
-  Promise.all(mostSeperatedLocations(locations).map(l => reverseGeocode({
+  Promise.all(locations.map(l => reverseGeocode({
     lat: l.coords.latitude,
     lng: l.coords.longitude
   })))
@@ -40,7 +40,7 @@ const buildGeoinfos = locations => new Promise((resolve, reject) => {
 })
 
 const buildRun = (runId, locations) => {
-  return buildGeoinfos(locations)
+  return buildGeoinfos(mostSeperatedLocations(locations))
   .catch(err => {
     return [] // ignore errors
   })
