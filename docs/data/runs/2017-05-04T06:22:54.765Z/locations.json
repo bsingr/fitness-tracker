@@ -1,0 +1,1444 @@
+[
+  {
+    "coords": {
+      "speed": 3.84,
+      "longitude": 9.194064578049996,
+      "latitude": 47.67366349701553,
+      "accuracy": 10,
+      "altitude_accuracy": 12,
+      "altitude": 403.1,
+      "heading": 231.68
+    },
+    "extras": {},
+    "is_moving": true,
+    "event": "motionchange",
+    "odometer": 27086.9,
+    "uuid": "B8AAB275-A67B-4AB6-A464-DC33BBE32B0C",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:22:54.765Z"
+  },
+  {
+    "coords": {
+      "speed": 3.94,
+      "longitude": 9.194198856138804,
+      "latitude": 47.67374622639983,
+      "accuracy": 5,
+      "altitude_accuracy": 8,
+      "altitude": 418.5,
+      "heading": 346.64
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27100.5,
+    "uuid": "78FA2EAA-81E0-4A24-9A93-CDCBD364F5E1",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:22:58.779Z"
+  },
+  {
+    "coords": {
+      "speed": 3.55,
+      "longitude": 9.194049742081383,
+      "latitude": 47.6737072924596,
+      "accuracy": 5,
+      "altitude_accuracy": 8,
+      "altitude": 413.1,
+      "heading": 268.95
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27112.5,
+    "uuid": "959A336B-E18D-4954-99DF-8739B74C4D5F",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:00.778Z"
+  },
+  {
+    "coords": {
+      "speed": 3.9,
+      "longitude": 9.193877745428303,
+      "latitude": 47.67369325277178,
+      "accuracy": 5,
+      "altitude_accuracy": 12,
+      "altitude": 409,
+      "heading": 257.7
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27125.5,
+    "uuid": "B2FC22FE-3713-43EA-B5DB-BEA3EFC1136E",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:02.779Z"
+  },
+  {
+    "coords": {
+      "speed": 3.22,
+      "longitude": 9.193751011052349,
+      "latitude": 47.67372673847495,
+      "accuracy": 5,
+      "altitude_accuracy": 8,
+      "altitude": 418.7,
+      "heading": 262.62
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27135.7,
+    "uuid": "B2DFA5CA-E4B7-4CD5-889D-18215FC334E7",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:06.000Z"
+  },
+  {
+    "coords": {
+      "speed": 3.88,
+      "longitude": 9.193570129581907,
+      "latitude": 47.67375737433105,
+      "accuracy": 5,
+      "altitude_accuracy": 8,
+      "altitude": 417.2,
+      "heading": 276.33
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27149.7,
+    "uuid": "F5A19F94-874E-4FD3-B955-519D2180003F",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:09.000Z"
+  },
+  {
+    "coords": {
+      "speed": 4.27,
+      "longitude": 9.193383213141182,
+      "latitude": 47.67373629384457,
+      "accuracy": 10,
+      "altitude_accuracy": 8,
+      "altitude": 415.8,
+      "heading": 266.48
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27164,
+    "uuid": "DAAA9441-1565-4019-B404-8407A06CDD69",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:12.000Z"
+  },
+  {
+    "coords": {
+      "speed": 4.04,
+      "longitude": 9.193221610048035,
+      "latitude": 47.67372862440317,
+      "accuracy": 5,
+      "altitude_accuracy": 8,
+      "altitude": 415.2,
+      "heading": 271.41
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27176.1,
+    "uuid": "06AB7017-C460-4C20-8EE5-DDC819D3C23A",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:15.000Z"
+  },
+  {
+    "coords": {
+      "speed": 4.06,
+      "longitude": 9.19305724092684,
+      "latitude": 47.67373197716444,
+      "accuracy": 5,
+      "altitude_accuracy": 8,
+      "altitude": 413.5,
+      "heading": 274.57
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27188.5,
+    "uuid": "43A9A563-3D8B-469A-B469-6EFAB5EA5A98",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:18.000Z"
+  },
+  {
+    "coords": {
+      "speed": 3.98,
+      "longitude": 9.192896392204979,
+      "latitude": 47.67374832187562,
+      "accuracy": 5,
+      "altitude_accuracy": 8,
+      "altitude": 416.1,
+      "heading": 274.22
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27200.7,
+    "uuid": "6B618EFB-F1A8-427C-99A9-A00284A42A9F",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:21.000Z"
+  },
+  {
+    "coords": {
+      "speed": 4.07,
+      "longitude": 9.192726742484785,
+      "latitude": 47.67376294829666,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 415.2,
+      "heading": 273.52
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27213.6,
+    "uuid": "D3197155-0DA6-46D0-9FEE-7488B7902ED6",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:24.000Z"
+  },
+  {
+    "coords": {
+      "speed": 4.92,
+      "longitude": 9.192542424434043,
+      "latitude": 47.67376743261485,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 415,
+      "heading": 273.87
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27227.4,
+    "uuid": "2017E45D-832A-4F7A-8CD2-EFFCC8B418CB",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:27.000Z"
+  },
+  {
+    "coords": {
+      "speed": 4.9,
+      "longitude": 9.192409068354584,
+      "latitude": 47.67377174929499,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 415.2,
+      "heading": 272.81
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27237.4,
+    "uuid": "7E28D8A3-043D-4E45-AD0C-460AB2EEC03C",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:29.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.2,
+      "longitude": 9.19221687131486,
+      "latitude": 47.67378163994073,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 415.5,
+      "heading": 275.63
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27251.9,
+    "uuid": "84A84615-0474-4009-A1B5-B5A27693FD5A",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:32.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.2,
+      "longitude": 9.192076809712864,
+      "latitude": 47.67379123721986,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 414.9,
+      "heading": 274.92
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27262.5,
+    "uuid": "7ABB5F38-75FC-4EC0-BDA0-D28B0CEF5F33",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:34.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.19,
+      "longitude": 9.191934568816043,
+      "latitude": 47.67379819419949,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 415.5,
+      "heading": 272.81
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27273.2,
+    "uuid": "291D40ED-4ADD-4B02-9818-AC79076345E5",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:36.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.64,
+      "longitude": 9.191780760892845,
+      "latitude": 47.6738011278656,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 415.7,
+      "heading": 271.41
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27284.8,
+    "uuid": "2ED09E2E-1EA5-40EF-8184-0AC0827ECEE2",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:38.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.86,
+      "longitude": 9.191621066659813,
+      "latitude": 47.67379064347029,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 415.1,
+      "heading": 273.34
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27296.8,
+    "uuid": "6ED6E5E8-BFAD-4495-A5E0-481737C4D332",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:40.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.15,
+      "longitude": 9.191274478013748,
+      "latitude": 47.67379963814013,
+      "accuracy": 5,
+      "altitude_accuracy": 3,
+      "altitude": 414.9,
+      "heading": 272
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27322.9,
+    "uuid": "95E80C71-FF55-4B01-983C-3D4538B699D8",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:44.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.14,
+      "longitude": 9.19111352981632,
+      "latitude": 47.6738034338516,
+      "accuracy": 5,
+      "altitude_accuracy": 3,
+      "altitude": 414.7,
+      "heading": 272
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27334.9,
+    "uuid": "BCA56D8A-0675-486B-B64F-3DD7D3E07872",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:46.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.17,
+      "longitude": 9.190950221658706,
+      "latitude": 47.67380728521903,
+      "accuracy": 5,
+      "altitude_accuracy": 3,
+      "altitude": 415.6,
+      "heading": 272
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27347.2,
+    "uuid": "9C125554-A2C4-4100-9B73-FABD8D39AC0E",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:48.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.33,
+      "longitude": 9.19077802866833,
+      "latitude": 47.67381134612135,
+      "accuracy": 5,
+      "altitude_accuracy": 3,
+      "altitude": 415.3,
+      "heading": 272
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27360.2,
+    "uuid": "6D0FDE7F-9F48-4DCF-82C6-F99B6C97BFF5",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:50.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.49,
+      "longitude": 9.190593838496136,
+      "latitude": 47.67381568995843,
+      "accuracy": 5,
+      "altitude_accuracy": 3,
+      "altitude": 414.8,
+      "heading": 272
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27374,
+    "uuid": "F5676A2B-22F0-4787-92DC-ECD35E601FB1",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:52.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.14,
+      "longitude": 9.190416815089057,
+      "latitude": 47.67381935767128,
+      "accuracy": 5,
+      "altitude_accuracy": 3,
+      "altitude": 414.6,
+      "heading": 270.97
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27387.3,
+    "uuid": "000101B3-BDDE-44AF-B039-85F709F62429",
+    "activity": {
+      "type": "on_foot",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:54.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.32,
+      "longitude": 9.190242216203872,
+      "latitude": 47.67382135026973,
+      "accuracy": 5,
+      "altitude_accuracy": 3,
+      "altitude": 414.8,
+      "heading": 270.97
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27400.4,
+    "uuid": "F248048E-B32F-4EBF-960E-9F41820C619A",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:56.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.54,
+      "longitude": 9.190063552377644,
+      "latitude": 47.67382338925905,
+      "accuracy": 5,
+      "altitude_accuracy": 3,
+      "altitude": 414.6,
+      "heading": 270.97
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27413.8,
+    "uuid": "71028296-48A1-4799-AD8C-EA2946D8D0C1",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:23:58.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.8,
+      "longitude": 9.189876696090508,
+      "latitude": 47.67382339777692,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 415.3,
+      "heading": 270
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27427.9,
+    "uuid": "3B485C57-A8A1-468F-A56F-D62AEC0730B9",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:00.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.66,
+      "longitude": 9.189710651547992,
+      "latitude": 47.67382339777692,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 415.4,
+      "heading": 270
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27440.3,
+    "uuid": "18B116F0-90D7-4FA2-B4CD-A6629CDF3330",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:02.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.61,
+      "longitude": 9.189523108678154,
+      "latitude": 47.67382189069879,
+      "accuracy": 10,
+      "altitude_accuracy": 4,
+      "altitude": 414.2,
+      "heading": 269.28
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27454.4,
+    "uuid": "6C2C735C-D69D-4881-9981-47BC82CFE176",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:04.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.84,
+      "longitude": 9.189349289534213,
+      "latitude": 47.6738201378871,
+      "accuracy": 10,
+      "altitude_accuracy": 4,
+      "altitude": 414.7,
+      "heading": 268.55
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27467.5,
+    "uuid": "2ADAEEBC-6FF8-44EC-B5AA-4498D821C467",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:06.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.19,
+      "longitude": 9.189178336827457,
+      "latitude": 47.67381686096636,
+      "accuracy": 10,
+      "altitude_accuracy": 4,
+      "altitude": 415.3,
+      "heading": 267.89
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27480.3,
+    "uuid": "8CF80420-65A3-44CB-8376-51DAEB5B47B8",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:08.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.94,
+      "longitude": 9.18902076962114,
+      "latitude": 47.67381293131655,
+      "accuracy": 10,
+      "altitude_accuracy": 6,
+      "altitude": 415.3,
+      "heading": 267.89
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27492.2,
+    "uuid": "DA7AE287-7777-43D5-9884-D0BE85E4E9AA",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:10.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.28,
+      "longitude": 9.188854745836277,
+      "latitude": 47.67380871241456,
+      "accuracy": 10,
+      "altitude_accuracy": 6,
+      "altitude": 416.4,
+      "heading": 266.83
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27504.6,
+    "uuid": "6ED86772-EEEB-4853-9E6A-B2F0B5AF7A2A",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:12.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.28,
+      "longitude": 9.18870414560123,
+      "latitude": 47.67380307878219,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 415.2,
+      "heading": 266.83
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27516,
+    "uuid": "3A5D2A9D-9A55-4A95-8606-806BCEA2FFA2",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:14.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.43,
+      "longitude": 9.188537252744823,
+      "latitude": 47.67379595240389,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 415.9,
+      "heading": 266.13
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27528.5,
+    "uuid": "131860F7-C219-4853-9B23-AAAA36406332",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:16.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.93,
+      "longitude": 9.18838890272605,
+      "latitude": 47.67378917248572,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 416.4,
+      "heading": 266.13
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27539.7,
+    "uuid": "4044578E-8B44-4C97-AC91-AA532B778DD3",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:18.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.13,
+      "longitude": 9.188219465705485,
+      "latitude": 47.67378142884575,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 415.9,
+      "heading": 266.13
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27552.5,
+    "uuid": "69053469-8BD0-48F1-85F1-6BC7214FAF50",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:20.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.21,
+      "longitude": 9.188070136714888,
+      "latitude": 47.67377460418643,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 413.7,
+      "heading": 266.13
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27563.7,
+    "uuid": "EDDD22D7-C774-4A37-835D-69D3B2EA724A",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:22.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.83,
+      "longitude": 9.187819259015797,
+      "latitude": 47.6737565411,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 414.7,
+      "heading": 263.73
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27582.6,
+    "uuid": "8B97B4DA-19CA-4840-ADD4-8420D82BE28F",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:25.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6,
+      "longitude": 9.187651064456329,
+      "latitude": 47.67374406392396,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 415.6,
+      "heading": 263.73
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27595.4,
+    "uuid": "E0E0CCB5-6219-475F-9F3F-EE330106C60C",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:27.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.33,
+      "longitude": 9.187473124467086,
+      "latitude": 47.67373024822965,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 414.6,
+      "heading": 263.23
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27608.8,
+    "uuid": "250BD832-7CCC-483B-AEED-57CF7F2E61FF",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:29.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.33,
+      "longitude": 9.187301849393261,
+      "latitude": 47.67371651862144,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 413.6,
+      "heading": 263.23
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27621.8,
+    "uuid": "E8A76781-FF04-4F33-9A1E-43D79872F2C0",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:31.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.07,
+      "longitude": 9.187134007143895,
+      "latitude": 47.67370247873528,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 413.4,
+      "heading": 262.21
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27634.5,
+    "uuid": "4A0EA7F0-1450-4F8A-A59F-0BA761EF8B24",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:33.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.42,
+      "longitude": 9.186977649174104,
+      "latitude": 47.67368802799631,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 412.8,
+      "heading": 262.21
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27646.3,
+    "uuid": "751D21B2-9847-480C-995C-4EAB7F834F39",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:35.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.17,
+      "longitude": 9.186835637972566,
+      "latitude": 47.67367461205968,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 413.8,
+      "heading": 261.87
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27657.1,
+    "uuid": "EBDA18FE-1C1B-4213-9F18-56499E09702B",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:37.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.13,
+      "longitude": 9.186667567071591,
+      "latitude": 47.6736584039256,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 414.7,
+      "heading": 261.87
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27669.8,
+    "uuid": "80DB4475-DBDD-4B43-9100-889960298889",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:39.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.83,
+      "longitude": 9.186491497938864,
+      "latitude": 47.67364142447173,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 414.7,
+      "heading": 261.87
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27683.2,
+    "uuid": "664C62CE-77C9-4F5D-A7EC-A0862B29FE06",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:41.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.85,
+      "longitude": 9.186324877722518,
+      "latitude": 47.67362535623629,
+      "accuracy": 5,
+      "altitude_accuracy": 4,
+      "altitude": 415.2,
+      "heading": 261.87
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27695.8,
+    "uuid": "47AB0227-2DC5-4234-BB59-0F8B4DC9CED7",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:43.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.02,
+      "longitude": 9.186154954405982,
+      "latitude": 47.67360896946213,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 415.6,
+      "heading": 261.87
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27708.7,
+    "uuid": "C4B73344-A4B1-43DC-9012-413CE561E07F",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:45.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.02,
+      "longitude": 9.185986641175008,
+      "latitude": 47.67359273795865,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 415.8,
+      "heading": 261.87
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27721.5,
+    "uuid": "00B03825-654E-48D4-ADF2-6B671DE99450",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:47.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.13,
+      "longitude": 9.185845997981765,
+      "latitude": 47.67357917485094,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 414.7,
+      "heading": 261.87
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27732.2,
+    "uuid": "D0CF7241-D327-46B9-A929-68789297FA50",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:49.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.13,
+      "longitude": 9.185674563476123,
+      "latitude": 47.6735626423433,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 414.1,
+      "heading": 261.87
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27745.2,
+    "uuid": "852DA55C-EA10-4EC9-ABDC-B43CDDA6CF89",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:51.000Z"
+  },
+  {
+    "coords": {
+      "speed": 6.02,
+      "longitude": 9.185511389698522,
+      "latitude": 47.67354690646963,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 414.3,
+      "heading": 261.87
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27757.6,
+    "uuid": "EF02D352-F85E-45C4-9EB2-B391CEDF0441",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:53.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.95,
+      "longitude": 9.185343190735102,
+      "latitude": 47.67353068598568,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 414.6,
+      "heading": 261.87
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27770.3,
+    "uuid": "F4F31912-772C-4A41-BD2E-8AAD54A3C3C6",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:55.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.23,
+      "longitude": 9.185063283823204,
+      "latitude": 47.67349998947682,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 414.4,
+      "heading": 260.66
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27791.6,
+    "uuid": "4C41884E-B815-4BAE-974F-60752FC89916",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:24:59.000Z"
+  },
+  {
+    "coords": {
+      "speed": 5.64,
+      "longitude": 9.18492423112306,
+      "latitude": 47.67348454252454,
+      "accuracy": 5,
+      "altitude_accuracy": 6,
+      "altitude": 415.1,
+      "heading": 260.66
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27802.2,
+    "uuid": "2D2A4E03-82FD-47BF-AB22-A003EE1BA6EE",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:25:01.000Z"
+  },
+  {
+    "coords": {
+      "speed": 8.07,
+      "longitude": 9.18450619894785,
+      "latitude": 47.67343888193979,
+      "accuracy": 10,
+      "altitude_accuracy": 8,
+      "altitude": 414.5,
+      "heading": 260.82
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27834,
+    "uuid": "E9E6D3E3-E1B7-4F3F-9FD4-C0219DB0A9D7",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:25:05.000Z"
+  },
+  {
+    "coords": {
+      "speed": 8.07,
+      "longitude": 9.18419337940264,
+      "latitude": 47.67340472430243,
+      "accuracy": 10,
+      "altitude_accuracy": 8,
+      "altitude": 413.7,
+      "heading": 260.82
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27857.8,
+    "uuid": "0677EEBF-2732-4632-987E-435371B4FB51",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:25:08.000Z"
+  },
+  {
+    "coords": {
+      "speed": 3.95,
+      "longitude": 9.183900521696886,
+      "latitude": 47.67336177849682,
+      "accuracy": 10,
+      "altitude_accuracy": 8,
+      "altitude": 411.1,
+      "heading": 257.53
+    },
+    "extras": {},
+    "is_moving": true,
+    "odometer": 27880.3,
+    "uuid": "B5592DC3-20E6-457D-B6B7-A5F3010975D2",
+    "activity": {
+      "type": "on_bicycle",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.43,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:25:13.000Z"
+  },
+  {
+    "coords": {
+      "speed": -1,
+      "longitude": 9.172300065828049,
+      "latitude": 47.6710478066424,
+      "accuracy": 65,
+      "altitude_accuracy": 10.7,
+      "altitude": 402.7,
+      "heading": -1
+    },
+    "extras": {},
+    "is_moving": false,
+    "event": "motionchange",
+    "odometer": 28818.2,
+    "uuid": "E564FB55-A929-4634-973D-8C9371D3C421",
+    "activity": {
+      "type": "still",
+      "confidence": 100
+    },
+    "battery": {
+      "level": 0.42,
+      "is_charging": false
+    },
+    "timestamp": "2017-05-04T06:29:20.334Z"
+  }
+]
