@@ -11,8 +11,8 @@ readRuns()
 .then(runs => {
   return Promise.all(Object.keys(runs).map(runId => {
     const run = runs[runId];
-    if (run.distance < 0.5 || run.time < 5) {
-      console.log(`INFO: Remove ${runId} with distance=${run.distance} time=${run.time}`)
+    if (run.distance < 0.5 || run.time < 5 || run.manualDelete) {
+      console.log(`INFO: Remove ${runId} with distance=${run.distance} time=${run.time} manualDelete=${run.manualDelete}`)
       delete runs[runId]
       return Promise.all([
         removeRunGeojson(runId),
