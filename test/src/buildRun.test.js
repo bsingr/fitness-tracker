@@ -17,8 +17,7 @@ describe('buildRun', () => {
           "Staad",
           "Strandbad Horn",
           "Konstanz"
-        ],
-        "struggle": 5
+        ]
       })
     })
   })
