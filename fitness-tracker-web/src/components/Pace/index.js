@@ -8,12 +8,8 @@ const tickStyle = (degrees) => ({transform: `rotate(${degrees}deg)`})
 
 const rotateStyle = (value) => ({transform: `rotate(${value.toFixed(0)}deg)`})
 
-const scaledRelation = (actualValue, targetValue) => {
-  const factor = 0.6
-  const scaledActualPace = actualValue * factor
-  const scaledTargetPace = targetValue * factor
-  const middle = scaledActualPace - scaledTargetPace
-  return 2.5 * middle / scaledTargetPace
+const scaledRelation = (actualValue) => {
+  return actualValue / 10 - 1;
 }
 
 const Scale = () => (
@@ -27,7 +23,7 @@ const Scale = () => (
 )
 
 const Pace = ({actualValue, targetValue}) => {
-  const deviation = scaledRelation(actualValue, targetValue)
+  const deviation = scaledRelation(actualValue)
   return (
     <div title='Pace' className='run__widget'>
       <Label value={actualValue.toFixed(1)} element='pace' modifier='actual' />
