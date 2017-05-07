@@ -25,8 +25,8 @@ const buildRoute = addresses => {
 
 const buildGeoinfos = locations => new Promise((resolve, reject) => {
   Promise.all(locations.map(l => reverseGeocode({
-    lat: l.coords.latitude,
-    lng: l.coords.longitude
+    lat: l.latitude,
+    lng: l.longitude
   })))
   .then(resolve)
   .catch(reject)
@@ -36,6 +36,7 @@ const buildRun = (runId, locations) => {
   const milestones = runMilestones(locations);
   return buildGeoinfos(milestones.map(m => m.location))
   .catch(err => {
+    console.error(err)
     return [] // ignore errors
   })
   .then(milestonesGeoinfos => {
@@ -44,7 +45,7 @@ const buildRun = (runId, locations) => {
       distance: runGeodistance(locations),
       time: runDuration(locations),
       route: buildRoute(milestonesGeoinfos.map(g => g.address)),
-      center: geocenter(locations.map(l => [l.coords.latitude, l.coords.longitude]))
+      center: geocenter(locations.map(l => [l.latitude, l.longitude]))
     }
   })
 }

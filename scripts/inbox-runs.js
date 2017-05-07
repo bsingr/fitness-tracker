@@ -17,6 +17,7 @@ const {
 } = require('../src/data')(DATA_DIR);
 const buildGeojson = require('../src/buildGeojson');
 const buildRun = require('../src/buildRun');
+const runLocation = require('../src/runLocation');
 
 readRuns()
 .then(runs => {
@@ -26,7 +27,7 @@ readRuns()
     return Promise.all(inboxRuns.map(inboxRun => {
       return readFile(inboxRun.path)
       .then(data => {
-        const locations = JSON.parse(data);
+        const locations = JSON.parse(data).map(runLocation);
         const runId = inboxRun.id;
         return buildRun(runId, locations).then(run => {
           runs[runId] = run;

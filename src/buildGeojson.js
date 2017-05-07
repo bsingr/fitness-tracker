@@ -1,7 +1,7 @@
 const buildGeojson = (locations) => {
   return {
     "type": "LineString",
-    "coordinates": locations.map(r => [r.coords.longitude, r.coords.latitude])
+    "coordinates": locations.map(r => [r.longitude, r.latitude])
   };
 }
 module.exports = buildGeojson;

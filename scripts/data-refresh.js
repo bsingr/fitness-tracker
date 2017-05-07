@@ -5,10 +5,12 @@ const {
   writeRuns,
   runPath,
   readRunLocations,
+  writeRunLocations,
   writeRunGeojson
 } = require('../src/data')(DATA_DIR);
 const buildGeojson = require('../src/buildGeojson');
 const buildRun = require('../src/buildRun');
+const runLocation = require('../src/runLocation');
 
 readRuns()
 .then(runs => {
@@ -19,15 +21,17 @@ readRuns()
       console.log(`INFO: No locations for run ${runId} (err = ${err})`);
       return [];
     })
-    .then(locations => {
+    .then(rawLocations => {
+      const locations = rawLocations.map(runLocation);
       if (locations.length === 0) {
         return Promise.resolve();
       }
-      console.log(`INFO: Rewrite ${runId} from ${locations.length} locations`);
       return buildRun(runId, locations).then(run => {
+        console.log(`INFO: Rewrite ${runId} from ${locations.length} locations (distance=${run.distance} duration=${run.time})`);
         runs[runId] = run;
         return mkdir(runPath(runId))
         .then(() => Promise.all([
+          writeRunLocations(runId, locations),
           writeRunGeojson(runId, buildGeojson(locations))
         ]))
       });

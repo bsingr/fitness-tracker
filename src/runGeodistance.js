@@ -6,10 +6,10 @@ const runGeodistances = locations => {
     let distance = 0;
     if (previousLocation) {
       distance = distance + geodistance(
-        previousLocation.coords.latitude,
-        previousLocation.coords.longitude,
-        currentLocation.coords.latitude,
-        currentLocation.coords.longitude
+        previousLocation.latitude,
+        previousLocation.longitude,
+        currentLocation.latitude,
+        currentLocation.longitude
       )
     }
     previousLocation = currentLocation;
