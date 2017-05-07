@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha src/**/*.test.js",
     "inbox-runs": "node scripts/inbox-runs.js",
-    "web:data": "rm -rf ./fitness-tracker-web/public/data && cp -R ./data ./fitness-tracker-web/public/data",
+    "web": "rm -rf ./fitness-tracker-web/public/data && cp -R ./data ./fitness-tracker-web/public/data",
     "data:gc": "node scripts/data-gc.js",
     "data:refresh": "node scripts/data-refresh.js"
   },
