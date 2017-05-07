@@ -1,0 +1,305 @@
+{
+  "urls": [
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.66608730428634&lon=9.192938720815995&zoom=18",
+      "data": {
+        "place_id": "103606828",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "169453463",
+        "lat": "47.66613525",
+        "lon": "9.19225186742463",
+        "display_name": "Schmuggler Bucht, Seeuferweg, Petershausen-Ost, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "beach": "Schmuggler Bucht",
+          "footway": "Seeuferweg",
+          "suburb": "Petershausen-Ost",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6655569",
+          "47.6665898",
+          "9.1912513",
+          "9.1960562"
+        ]
+      }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.66626085159151&lon=9.217021102094293&zoom=18",
+      "data": {
+        "place_id": "96190420",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "136531257",
+        "lat": "47.6662099",
+        "lon": "9.21761035879222",
+        "display_name": "DLRG, Wendelgardweg, Staad, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "building": "DLRG",
+          "footway": "Wendelgardweg",
+          "suburb": "Staad",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6661682",
+          "47.6662543",
+          "9.2175514",
+          "9.2176698"
+        ]
+      }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.67344514843791&lon=9.211865812548632&zoom=18",
+      "data": {
+        "place_id": "88876018",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "114373092",
+        "lat": "47.67299925",
+        "lon": "9.21136798612031",
+        "display_name": "Kanu- und Kajakschule Paddelprofi, 54, Fohrenbühlweg, Staad, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "building": "Kanu- und Kajakschule Paddelprofi",
+          "house_number": "54",
+          "path": "Fohrenbühlweg",
+          "suburb": "Staad",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6729338",
+          "47.6730647",
+          "9.2112776",
+          "9.2114584"
+        ]
+      }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.68149571497708&lon=9.211514946081872&zoom=18",
+      "data": {
+        "place_id": "78054742",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "53789195",
+        "lat": "47.68136955",
+        "lon": "9.2114761299231",
+        "display_name": "10, William-Graf-Platz, Staad, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "house_number": "10",
+          "road": "William-Graf-Platz",
+          "suburb": "Staad",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6812827",
+          "47.6814565",
+          "9.2114158",
+          "9.2115364"
+        ]
+      }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.66371384267477&lon=9.205152913936605&zoom=18",
+      "data": {
+        "place_id": "90302390",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "117574200",
+        "lat": "47.664097",
+        "lon": "9.20538881605954",
+        "display_name": "10b, Alpsteinweg, Petershausen-Ost, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "house_number": "10b",
+          "road": "Alpsteinweg",
+          "suburb": "Petershausen-Ost",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6639927",
+          "47.6642243",
+          "9.2051999",
+          "9.2055803"
+        ]
+      }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.66634253323792&lon=9.192318040886141&zoom=18",
+      "data": {
+        "place_id": "103606828",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "169453463",
+        "lat": "47.66613525",
+        "lon": "9.19225186742463",
+        "display_name": "Schmuggler Bucht, Seeuferweg, Petershausen-Ost, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "beach": "Schmuggler Bucht",
+          "footway": "Seeuferweg",
+          "suburb": "Petershausen-Ost",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6655569",
+          "47.6665898",
+          "9.1912513",
+          "9.1960562"
+        ]
+      }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.66617615245996&lon=9.216257845991493&zoom=18",
+      "data": {
+        "place_id": "71027427",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "28345369",
+        "lat": "47.666726",
+        "lon": "9.21597810661818",
+        "display_name": "Strandbad Horn, Wendelgardweg, Staad, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "park": "Strandbad Horn",
+          "footway": "Wendelgardweg",
+          "suburb": "Staad",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6651332",
+          "47.6684645",
+          "9.2115428",
+          "9.2177929"
+        ]
+      }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.67397777647494&lon=9.211560962730283&zoom=18",
+      "data": {
+        "place_id": "72135781",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "30761607",
+        "lat": "47.673897",
+        "lon": "9.21118375",
+        "display_name": "SpVgg Allmannsdorf, Emanuel-von-Bodman-Weg, Staad, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "pitch": "SpVgg Allmannsdorf",
+          "footway": "Emanuel-von-Bodman-Weg",
+          "suburb": "Staad",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6733759",
+          "47.6744181",
+          "9.2106261",
+          "9.2117414"
+        ]
+      }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.66665534586429&lon=9.179796986290421&zoom=18",
+      "data": {
+        "place_id": "87477389",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "109388438",
+        "lat": "47.66680645",
+        "lon": "9.18000436553378",
+        "display_name": "1, Seestraße, Petershausen-Ost, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "house_number": "1",
+          "road": "Seestraße",
+          "suburb": "Petershausen-Ost",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6667182",
+          "47.6669278",
+          "9.1798348",
+          "9.1801805"
+        ]
+      }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.66388445631383&lon=9.204375324779381&zoom=18",
+      "data": {
+        "place_id": "90302384",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "117574170",
+        "lat": "47.66432135",
+        "lon": "9.2045792",
+        "display_name": "6, Alpsteinweg, Petershausen-Ost, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "house_number": "6",
+          "road": "Alpsteinweg",
+          "suburb": "Petershausen-Ost",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.664232",
+          "47.6644107",
+          "9.2044363",
+          "9.2047221"
+        ]
+      }
+    }
+  ]
+}
