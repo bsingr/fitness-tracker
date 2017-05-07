@@ -1,7 +1,8 @@
 const runGeodistance = require('./runGeodistance');
 const runDuration = require('./runDuration');
 const uniqby = require('lodash.uniqby');
-const reverseGeocode = require('./reverseGeocode')
+const reverseGeocode = require('./reverseGeocode');
+const geocenter = require('./geocenter');
 
 // address properties: park, bus_stop, path, road, suburb, town
 const buildRoute = addresses => {
@@ -49,6 +50,7 @@ const buildRun = (runId, locations) => {
       distance: runGeodistance(locations),
       time: runDuration(locations),
       route: buildRoute(geoinfos.map(g => g.address)),
+      center: geocenter(locations.map(l => [l.coords.latitude, l.coords.longitude])),
       struggle: 5
     }
   })

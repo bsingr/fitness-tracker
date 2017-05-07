@@ -22,6 +22,10 @@ describe('buildRun', () => {
         "distance": 0.2995037060109473,
         "time": 10.016666666666667,
         "id": "foo",
+        "center": [
+          47.67189762639705
+          9.155927314644563
+        ]
         "route": [
           "Konstanz-Industriegebiet",
           "Konstanz"

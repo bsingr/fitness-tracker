@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.1",
+    "leaflet": "^1.0.3",
     "lodash.sortby": "^4.7.0",
     "ramda": "^0.23.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-leaflet": "^1.1.6"
   },
   "devDependencies": {
     "node-sass": "^4.5.2",

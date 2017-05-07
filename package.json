@@ -8,6 +8,7 @@
     "inbox-runs": "node scripts/inbox-runs.js",
     "ci": "npm test && npm run inbox-runs && ./scripts/ci-docs.sh",
     "web:data": "rm -rf ./fitness-tracker-web/public/data && cp -R ./data ./fitness-tracker-web/public/data",
+    "data:gc": "node scripts/data-gc.js",
     "data:refresh": "node scripts/data-refresh.js"
   },
   "repository": {

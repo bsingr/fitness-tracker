@@ -9,8 +9,8 @@ body {
 .progressbar {
   width: 112px;
   height: 32px;
-  margin-top: 12px;
-  border: 0.15em solid #9b59b6;
+  margin-top: 32px;
+  border: 0.2em solid #9b59b6;
   background-color: #e6dcea; }
 
 .progressbar__gauge {
@@ -18,7 +18,7 @@ body {
   height: 100%; }
 
 .label__intensity {
-  top: 55px; }
+  top: 72px; }
 
 .label__intensity:after {
   margin-left: 2px;

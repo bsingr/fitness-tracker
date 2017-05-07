@@ -15,12 +15,24 @@ class Page extends React.Component {
   componentDidMount () {
     this.props.fetchRuns().then((runs) => {
       this.setState({runs})
+      Promise.all(runs.map(run => {
+        return this.props.fetchRunGeojson(run.id)
+      })).then(runsGeojsons => {
+        this.setState({runsGeojsons})
+      })
     })
   }
 
   renderMainBlock () {
     if (this.state && this.state.runs) {
-      return this.state.runs.map((run, i) => <Run run={run} key={i} />)
+      return this.state.runs.map((run, i) => (
+        <Run
+          run={run}
+          key={i}
+          runGeojson={(this.state.runsGeojsons || [])[i]}
+          mapboxToken={this.props.mapboxToken}
+          />
+      ))
     } else {
       return <LoadingIndicator />
     }
@@ -36,7 +48,8 @@ class Page extends React.Component {
           </div>
           <div className='info'>
             <a href='http://jotaen.net/oBPhB/run-monitor'>What is this?</a>
-            <a href='https://github.com/jotaen/run-monitor'>Github</a>
+            <a href='https://github.com/bsingr/fitness-tracker'>Github</a>
+            <a href='http://leafletjs.com/'>Maps © Mapbox © OpenStreetMap</a>
           </div>
         </header>
         <main>
@@ -49,7 +62,9 @@ class Page extends React.Component {
 
 Page.propTypes = {
   // fetch: a function that returns a Promise
-  fetchRuns: PropTypes.func.isRequired
+  fetchRuns: PropTypes.func.isRequired,
+  fetchRunGeojson: PropTypes.func.isRequired,
+  mapboxToken: PropTypes.string.isRequired
 }
 
 module.exports = Page

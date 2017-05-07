@@ -21,10 +21,20 @@ const fetchRuns = url => () => {
   })
 }
 
+const fetchRunGeojson = baseUrl => runId => {
+  return axios.request({
+    url: baseUrl + runId + '/locations.geojson'
+  })
+  .then(res => res.data);
+}
+
 class App extends Component {
   render() {
     return (
-      <Page fetchRuns={fetchRuns(PUBLIC_URL + '/data/runs.json')} />
+      <Page
+        fetchRuns={fetchRuns(PUBLIC_URL + '/data/runs.json')}
+        fetchRunGeojson={fetchRunGeojson(PUBLIC_URL + '/data/runs/')}
+        mapboxToken={config.mapboxToken} />
     );
   }
 }

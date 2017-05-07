@@ -2,7 +2,7 @@
   padding: 16px 16px 32px 32px;
   border-bottom: 1px solid #ccc;
   clear: both;
-  max-width: 896px;
+  max-width: 960px;
   margin: 0 auto;
   overflow: auto;
   text-align: center; }
@@ -19,8 +19,8 @@
   box-sizing: border-box;
   overflow: hidden;
   height: 160px;
-  width: 224px;
-  padding: 16px 48px; }
+  width: 192px;
+  padding: 16px 32px; }
 
 .run__date {
   font-size: 22px;
