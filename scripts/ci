@@ -6,4 +6,5 @@ npm install
 npm test
 npm run inbox-runs
 npm run data:refresh
+./scripts/ci-docs
 ./scripts/ci-git-commit-and-push

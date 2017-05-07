@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "7"
-script: ./scripts/ci.sh
+script: ./scripts/ci
 env:
   global:
   - ENCRYPTION_LABEL: "b01b3bb31771"
