@@ -15,6 +15,7 @@ describe('buildRun', () => {
         "route": [
           "Petershausen-Ost",
           "Staad",
+          "Strandbad Horn",
           "Konstanz"
         ],
         "struggle": 5

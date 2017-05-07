@@ -4,7 +4,7 @@ const runMilestones = (locations) => {
   let intermediateDistance = 0;
   return runGeodistances(locations).reduce((milestones, localDistance, idx) => {
     intermediateDistance = intermediateDistance + localDistance;
-    if (intermediateDistance > (totalDistance/5)) { // take if distance to previous is > 1/5 of total distance
+    if (intermediateDistance > (totalDistance/10)) { // take if distance to previous is > 1/5 of total distance
       milestones.push({
         distance: intermediateDistance,
         location: locations[idx]
