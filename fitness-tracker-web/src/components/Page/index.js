@@ -11,10 +11,30 @@ const LoadingIndicator = () => (
   </div>
 )
 
+const buildYearsFromRuns = (runs) => {
+  const years = []
+  runs.forEach(run => {
+    const year = run.date.getFullYear();
+    if (years.indexOf(year) === -1) {
+      years.push(year)
+    }
+  })
+  return years;
+}
+
 class Page extends React.Component {
+  constructor(props) {
+    super(props);
+    this.setFilterYear = this.setFilterYear.bind(this);
+  }
   componentDidMount () {
     this.props.fetchRuns().then((runs) => {
-      this.setState({runs})
+      const years = buildYearsFromRuns(runs).sort();
+      this.setState({
+        runs,
+        years,
+        filterYear: years[years.length - 1]
+      })
       Promise.all(runs.map(run => {
         return this.props.fetchRunGeojson(run.id)
       })).then(runsGeojsons => {
@@ -22,10 +42,35 @@ class Page extends React.Component {
       })
     })
   }
+  setFilterYear(e) {
+    const filterYear = parseInt(e.target.text, 10);
+    this.setState({filterYear});
+  }
+
+  renderFilterBlock() {
+    if (this.state && this.state.years) {
+      return (
+        <div className="runfilter">
+          {this.state.years.map(year => {
+            return (
+              <a key={year}
+                href={`#${year}`}
+                onClick={this.setFilterYear}
+                className={`${year === this.state.filterYear ? 'active' : ''}`}>
+                  {year}
+              </a>
+            )
+          })}
+        </div>
+      )
+    }
+  }
 
   renderMainBlock () {
     if (this.state && this.state.runs) {
-      return this.state.runs.map((run, i) => (
+      return this.state.runs.filter(run => {
+        return run.date.getFullYear() === this.state.filterYear
+      }).map((run, i) => (
         <Run
           run={run}
           key={i}
@@ -53,6 +98,7 @@ class Page extends React.Component {
           </div>
         </header>
         <main>
+          { this.renderFilterBlock() }
           { this.renderMainBlock() }
         </main>
       </div>

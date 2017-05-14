@@ -12,6 +12,20 @@ body {
   background-color: #2c3e50;
   text-align: center; }
 
+.runfilter {
+  position: relative;
+  text-align: center;
+  margin: 1em; }
+.runfilter a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 1em;
+}
+.runfilter a.active {
+  text-decoration: underline;
+}
+
 .logo {
   font-size: 28px;
   font-weight: 900; }
