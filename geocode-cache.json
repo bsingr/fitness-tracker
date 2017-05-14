@@ -10034,6 +10034,125 @@
           "9.1818792"
         ]
       }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.692&lon=9.192&zoom=18",
+      "data": {
+        "place_id": "72290470",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "31538299",
+        "lat": "47.6918625",
+        "lon": "9.19172789569084",
+        "display_name": "10, Flurweg, Egg, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "house_number": "10",
+          "road": "Flurweg",
+          "suburb": "Egg",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6917957",
+          "47.6919293",
+          "9.1916294",
+          "9.1918264"
+        ]
+      }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.686&lon=9.208&zoom=18",
+      "data": {
+        "place_id": "80897268",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "72761754",
+        "lat": "47.6861608",
+        "lon": "9.2075932794702",
+        "display_name": "44, Hoheneggstraße, Staad, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "house_number": "44",
+          "road": "Hoheneggstraße",
+          "suburb": "Staad",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6860368",
+          "47.686296",
+          "9.2074288",
+          "9.2077781"
+        ]
+      }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.693&lon=9.197&zoom=18",
+      "data": {
+        "place_id": "71782040",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "31281855",
+        "lat": "47.69330505",
+        "lon": "9.1974994",
+        "display_name": "90, Hoheneggstraße, Staad, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "house_number": "90",
+          "road": "Hoheneggstraße",
+          "suburb": "Staad",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6932497",
+          "47.6933604",
+          "9.1974089",
+          "9.1975899"
+        ]
+      }
+    },
+    {
+      "url": "http://nominatim.openstreetmap.org/reverse?format=json&lat=47.688&lon=9.194&zoom=18",
+      "data": {
+        "place_id": "66211118",
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://www.openstreetmap.org/copyright",
+        "osm_type": "way",
+        "osm_id": "19034933",
+        "lat": "47.6882999",
+        "lon": "9.1939884",
+        "display_name": "Holzgasse, Allmannsdorf, Konstanz, Verwaltungsgemeinschaft Konstanz, Landkreis Konstanz, Regierungsbezirk Freiburg, Baden-Württemberg, 78464, Deutschland",
+        "address": {
+          "path": "Holzgasse",
+          "suburb": "Allmannsdorf",
+          "town": "Konstanz",
+          "county": "Verwaltungsgemeinschaft Konstanz",
+          "state_district": "Regierungsbezirk Freiburg",
+          "state": "Baden-Württemberg",
+          "postcode": "78464",
+          "country": "Deutschland",
+          "country_code": "de"
+        },
+        "boundingbox": [
+          "47.6869168",
+          "47.6894458",
+          "9.1939348",
+          "9.1942745"
+        ]
+      }
     }
   ]
 }
