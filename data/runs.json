@@ -78,8 +78,7 @@
     "distance": 8.576730465305822,
     "time": 46.983333333333334,
     "route": [
-      "Konstanz",
-      null
+      "Konstanz"
     ],
     "center": [
       47.66362420577835,
@@ -94,8 +93,7 @@
       "Via dei Nuraghi",
       "Via Monte Nai",
       "Via Ichnusa",
-      "Via Necropoli",
-      null
+      "Via Necropoli"
     ],
     "center": [
       39.26194715025315,
@@ -122,8 +120,7 @@
     "distance": 8.052342223096645,
     "time": 49.18333333333333,
     "route": [
-      "Konstanz",
-      null
+      "Konstanz"
     ],
     "center": [
       47.66307935070201,
@@ -182,8 +179,7 @@
     "time": 43.833333333333336,
     "route": [
       "Konstanz",
-      "Kreuzlingen",
-      null
+      "Kreuzlingen"
     ],
     "center": [
       47.65022909453857,
@@ -195,8 +191,7 @@
     "distance": 7.6562435650581655,
     "time": 46.93333333333333,
     "route": [
-      "Konstanz",
-      null
+      "Konstanz"
     ],
     "center": [
       47.66242237034277,
@@ -209,8 +204,7 @@
     "time": 30.966666666666665,
     "route": [
       "Kreuzlingen",
-      "Konstanz",
-      null
+      "Konstanz"
     ],
     "center": [
       47.66053733281648,
@@ -222,8 +216,7 @@
     "distance": 6.401489021012401,
     "time": 39.8,
     "route": [
-      "Konstanz",
-      null
+      "Konstanz"
     ],
     "center": [
       47.662678420191256,
@@ -265,8 +258,7 @@
     "distance": 8.56967076136911,
     "time": 51.583333333333336,
     "route": [
-      "Konstanz",
-      null
+      "Konstanz"
     ],
     "center": [
       47.663323032682655,
@@ -354,8 +346,7 @@
     "distance": 7.814677544058322,
     "time": 47.43333333333333,
     "route": [
-      "Konstanz",
-      null
+      "Konstanz"
     ],
     "center": [
       47.662822436305646,
@@ -388,8 +379,7 @@
       "Via Ichnusa",
       "Via Necropoli",
       "Via delle Tamerici",
-      "Via Amerigo Vespucci",
-      null
+      "Via Amerigo Vespucci"
     ],
     "center": [
       39.26079662636104,
@@ -401,8 +391,7 @@
     "distance": 9.763581113677514,
     "time": 54.266666666666666,
     "route": [
-      "Konstanz",
-      null
+      "Konstanz"
     ],
     "center": [
       47.662687895404225,
@@ -414,8 +403,7 @@
     "distance": 15.797128288681154,
     "time": 98.13333333333334,
     "route": [
-      "Konstanz",
-      null
+      "Konstanz"
     ],
     "center": [
       47.68243584965545,
@@ -432,8 +420,7 @@
       "Via delle Agavi",
       "Via Ichnusa",
       "Via Monte Nai",
-      "Via dei Nuraghi",
-      null
+      "Via dei Nuraghi"
     ],
     "center": [
       39.26039583206626,
@@ -446,9 +433,7 @@
     "time": 45.85,
     "route": [
       "Via Necropoli",
-      null,
-      "SP97",
-      null
+      "SP97"
     ],
     "center": [
       39.28024014483995,
@@ -461,8 +446,7 @@
     "time": 44.333333333333336,
     "route": [
       "Konstanz",
-      "Kreuzlingen",
-      null
+      "Kreuzlingen"
     ],
     "center": [
       47.649236077583836,
@@ -522,7 +506,6 @@
     "time": 117.41666666666667,
     "route": [
       "Lindau (Bodensee)",
-      null,
       "Bregenz"
     ],
     "center": [
@@ -768,8 +751,7 @@
     "distance": 7.721170666141493,
     "time": 45.95,
     "route": [
-      "Konstanz",
-      null
+      "Konstanz"
     ],
     "center": [
       47.66252359010559,
@@ -781,8 +763,7 @@
     "distance": 6.299801021443599,
     "time": 41.25,
     "route": [
-      "Konstanz",
-      null
+      "Konstanz"
     ],
     "center": [
       47.66265079388904,

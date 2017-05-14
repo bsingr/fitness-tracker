@@ -20,7 +20,7 @@ const buildRoute = addresses => {
     }
     route = route.concat(towns);
   }
-  return route;
+  return route.filter(r => typeof r === 'string');
 }
 
 const buildGeoinfos = locations => new Promise((resolve, reject) => {
